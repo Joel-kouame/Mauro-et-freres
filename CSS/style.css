@@ -1,0 +1,727 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins;
+}
+a{
+    color: #AAAAAA;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+.fa-fw{
+    margin-left: 5px;
+}
+button{
+    height: 49px;
+    width: 165px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: transparent;
+    border-radius: 17px;
+    border: 2px solid white;
+}
+.header1, .header2, .boite2, .boite3, .boite4, .boite5,.imgallery, .boite8, .boite9, footer{
+    display: flex;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.boite8, .boite9{
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    flex-direction: column;
+}
+/* header */
+header{
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+/* premier en tete */
+.header1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2A2A2A;
+    height: 40px;
+    position: absolute;
+}
+.header_icon{
+    color: #DE1212;
+}
+.hder1{
+    margin-right: 30px;
+}
+.cnt{
+    color: white;
+}
+/* deuxiemme en tete */
+.header2{
+    margin-top: 40px;
+    background-color: rgba(10, 242, 117, 0.12);
+}
+.hder2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.logo{
+    width: 88px;
+    height: 75px;
+    font-weight: 700;
+    font-size: 1.5em;
+    text-align: center;
+    letter-spacing: 0.075em;
+    color: #000000;
+}
+input{
+    border-radius: 6px;
+}
+.search{
+    height: 42px;
+    width: 60%;
+    margin-right: 10px;
+    font-size: 1em;
+    padding: 10px;
+    background-color: transparent;
+    border: 1px solid #000000;
+}
+.submit{
+    height: 42px;
+    width: 30%;
+    color: black;
+    background-color: #FED23D;
+    align-items: center;
+    border: none;
+}
+.nav, .menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_list{
+    list-style: none;
+    padding-right: 30px;
+}
+.nav_list a{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    font-style: normal;
+}
+/* fin header debut du corps de la page */
+/* premiere section */
+.boite1{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 800px;
+    background-image: url(../IMG/tomatoes-1561565_1920.jpg);
+    background-size: cover;
+    background-position: right;
+    color: white;
+    padding-right: 155px;
+    text-align: center;
+}
+.frais{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+.gout{
+    font-size: 2.7em;
+    margin-bottom: 14px;
+}
+.terroir{
+    letter-spacing: 0.16em;
+}
+/* deuxiemme section */
+.boite2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.abouts, .info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.abouts{
+    width: 40%;
+}
+h3{
+    font-size: 1.3em;
+    color: #8A955C;
+    margin-bottom: 7px;
+}
+h2{
+    font-weight: bold;
+    font-size: 2.38em;
+}
+.btn{
+    width: 330px;
+    height: 70px;
+    border: 2px solid #8A955C;
+    color: #000000;
+    font-size: 24px;
+    margin-top: 30px;
+}
+.info{
+    width: 52%;
+}
+p{
+    font-weight: 300;
+    font-size: 1.25em;
+    line-height: 168%;
+    align-items: center;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.kouak{
+    font-size: 1.8em;
+    color: #000000;
+    font-weight: bold;
+}
+.pdg{
+    color: #8A955C;
+    font-size: 1.2em;
+}
+/* troisieme section */
+.boite3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.categorie{
+    display: flex;
+    align-items: end;
+    width: 32%;
+    height:500px;
+    background-color: aqua;
+    border-radius: 17px;
+    padding: 0px 30px 50px 30px;
+}
+.cerise{
+    background-image: url('../IMG/pexels-laura-habegger-11247569.jpg');
+    background-size: cover;
+}
+.cobra{
+    background-image: url('../IMG/pexels-julia-1327838.jpg');
+    background-size: cover;
+}
+.marmande{
+    background-image: url('../IMG/Mar-0209.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.name_categ{
+    background-color: white;
+    width: 100%;
+    height: 66px;
+    border-radius: 7px;
+    padding: 15px 0px 15px 30px;
+    font-size: 1.4em;
+    line-height: 36px;
+}
+/* quatriemme section */
+.boite4{
+    display: flex;
+    height: 209px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #F1F1F1;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.acroche1{
+    color: #6A4D5B;
+    font-size: 26px;
+    letter-spacing: 0.02em;
+}
+.rigueur{
+    color: #D22054;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+/* cinquiemme section  */
+.section5{
+    padding-top: 50px;
+    padding-bottom: 200px;
+    background-image: url('../IMG/spaghetti-1932466.jpg');
+    background-size: cover;
+}
+.Nous{
+    color: white;
+}
+.service_blocks{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    background-color: white;
+    border-radius: 17px;
+    padding: 35px 30px 35px 30px;
+}
+.service_titre{
+    color: #000000;
+    font-size: 1.52em;
+    font-weight: bolder;
+    letter-spacing: 16%;
+    margin-bottom: 20px;
+}
+.icon_services{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 20px;
+}
+.next{
+    height: 50px;
+    width: 50px;
+}
+/* sixiemme boite */
+.boits{
+    width: 50%;
+}
+.boits h2{
+    width: 90%;
+}
+.boitss{
+    height: 55px;
+    font-size: 1em;
+    width: 200px;
+    color: #8A955C;
+    border: 2px solid #8A955C;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.ul_list{
+    margin-left: 30px;
+}
+.ul_list li{
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+.boit{
+    width: 43%;
+    background-size: cover;
+    height: 600px;
+    border-radius: 17px;
+}
+/* gallery d'image */
+/*.gallery{
+    flex-direction: column;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.imgallery{
+    display: flex;
+    flex-direction: column;
+}
+.imgallery section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.premiere aside{
+    display: flex;
+    margin-top: 20px;
+    width: 49%;
+    background-color: #000000;
+}
+.cache{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.cache aside{
+    width: 49%;
+    background-color: #FED23D;
+    height: 232px;
+    margin: 0px;
+    margin-bottom: 20px;
+}
+.deuxiemme aside{
+    margin-top: 20px;
+    width: 32%;
+    height: 300px;
+    background-color: aqua;
+}
+.troisiemme aside{
+    margin-top: 20px;
+    width: 24%;
+    height: 200px;
+    background-color: #D22054;
+}*/
+
+/* huitiemme section */
+.fond{
+    background-color: #E2FDF0;
+    background-repeat: no-repeat;
+}
+.tittre_produit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tiret{
+    width: 100px;
+    height: 2.3px;
+    color: #DE1212;
+    background-color: #DE1212;
+    margin-bottom: 6px;
+}
+.produits{
+    width: 23%;
+    background-color: WHITE;
+    border-radius: 7px;
+    padding: 20px;
+}
+.produits h5{
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1.35em;
+}
+.img_produits{
+    width: 100%;
+}
+.img_produits img{
+    width: 100%;
+}
+.sect{
+    margin-top: 45px;
+}
+/* neuviemme section */
+.boite9{
+    margin-bottom: 50px;
+}
+.blogs{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.blog{
+    display: inline-flex;
+    flex-direction: column;
+    width: 32%;
+    text-align: left;
+}
+.imageblog{
+    height: 300px;
+    width: 100%;
+    background-image: url(../IMG/tomates_manger_nutrition_bienfaits.webp);
+    background-size: cover;
+    border-radius: 17px;
+}
+.date{
+    margin: 15px 0px 15px 0px;
+    font-weight: lighter;
+    font-size: 1em;
+}
+.blog h3{
+    font-weight: bolder;
+    font-size: 1.95em;
+    color: black;
+}
+.blog p{
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+.blog a{
+    color: black;
+    font-size: 1.3em;
+    font-weight: bolder;
+}
+.jus{
+    background-image: url('../IMG/351122-le-cocktail-bloody-mary-opengraph_1200-2.jpeg');
+    background-size: cover;
+}
+.astuces{
+    background-image: url('../IMG/Visuel-article-.png');
+    background-size: cover;
+}
+/* onziemme ection */
+.boite11{
+    background-color: #FEF8F8;
+}
+.contas{
+    width: 31%;
+}
+.contass{
+    width: 61%;
+}
+.formulaire{
+    display: flex;
+    flex-direction: column;
+}
+.formulaire h4{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.formulaire section{
+    display: flex;
+    justify-content: space-between;
+}
+.nom{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+}
+.noms{
+    height: 50px;
+    margin-top: 3px;
+    margin-bottom: 6px;
+    padding: 20px;
+    text-align: center;
+    font-size: 1em;
+    border: 1px solid #D22054;
+}
+.email{
+    width: 70%;
+}
+.message{
+    height: 150px;
+    margin-bottom: 15px;
+}
+.btne{
+    width: 155px;
+    height: 60px;
+    background-color: red;
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: none;
+    border: none;
+}
+/* derniere section */
+.dernier{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-left: 13%;
+    padding-right: 13%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.boite_logo{
+    display: flex;
+    width: 18%;
+    height: 150px;
+    background-color: #D9D9D9;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+/* pied de page */
+footer{
+    flex-direction: column;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-color: #334B36;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.section_footer{
+    width: 20%;
+}
+.footm{
+    color: white;
+}
+.section_footer h2{
+    color: #F1F1F1;
+    font-size: 1.5em;
+}
+.section_footer ul, .section_footer p{
+    margin-top: 20px;
+}
+.section_footer ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.section_footer ul li a, .section_footer p{
+    color: #8A955C;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+.numero{
+    color: white;
+    font-weight: bold;
+}
+/* media query pour les petit ecran */
+@media screen and (max-width: 600px){
+    .hder2, .footer{
+        display: block;
+        flex-direction: column;
+        width: 100%;
+    }
+    .boite1{
+        padding-right: 10px;
+    }
+    .header1{
+        font-size: 0.4em;
+    }
+    .menu{
+        display: block;
+    }
+    nav ul{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+    }
+    h2{
+        font-size: 1.3em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    .boite2{
+        display: block;
+        flex-direction: column;
+    }
+    .abouts{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+    .pdg{
+        font-size: 1em;
+    }
+    .btn{
+        width: 150px;
+        font-size: 0.6em;
+        height: 30px;
+        border-radius: 5px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    /* gallery */
+    /*.deuxiemme aside, .premiere aside, .troisiemme aside, .cache aside {
+        width: 100%;
+    }
+    .imgallery section{
+        display: block;
+    }
+    .cache{
+        display: block;
+    } */
+    /* boite3 */
+    .boite3{
+        display: block;
+        margin-top: 20px;
+    }
+    .categorie{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+        /* boite5 */
+    .blogs{
+        display: block;
+        width: 100%;
+    }
+    .blogs h3{
+        margin-top: 10px;
+        font-size: 1.5em;
+    }
+    .produits{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    /* footer */
+    .section_footer{
+        width: 100%;
+    }
+    .section_footer h2{
+        text-align: center;
+    }
+    /* blogs */
+    .blog{
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .contass{
+        margin-top: 10px;
+        width: 100%;
+    }
+    .dernier{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .boite_logo{
+        width: 100;
+        height: 70px;
+    }
+    .foot{
+        font-size: 0.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1220px){
+    .header1{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 0.7em;
+    }
+    .menu{
+        display: block;
+    }
+    .nav_list{
+        padding-right: 10px;
+    }
+    .hder2 nav ul li a{
+        font-size: 0.75em;
+    }
+    .boite2{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+    .boite2 .abouts, .boite2 .info {
+        width: 100%;
+    }
+    .blogs{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .blogs .produits{
+        width: 49%;
+        margin-bottom: 20px;
+    }
+    iframe{
+        margin-top: 30px;
+    }
+}
