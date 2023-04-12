@@ -1,8 +1,9 @@
-    *{
+*{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family:sans-serif;
+    line-height: 1;
 }
 a{
     color: #AAAAAA;
@@ -12,18 +13,7 @@ a{
 .fa-fw{
     margin-left: 5px;
 }
-button{
-    height: 49px;
-    width: 165px;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    font-weight: 700;
-    background-color: transparent;
-    border-radius: 17px;
-    border: 2px solid white;
-}
-.header1, .header2, .boite2, .boite3, .boite4, .boite5,.imgallery, .boite8, .boite9, footer{
+.header1, .boite2, .boite3, .boite4, .boite5,.imgallery, .boite8, .boite9, footer{
     display: flex;
     width: 100%;
     padding-left: 5%;
@@ -63,61 +53,86 @@ header{
     color: white;
 }
 /* deuxiemme en tete */
-.header2{
+
+/* nav */
+.navbar{
+    padding-top: 0px;
+    padding-bottom: 0px;
     margin-top: 40px;
-    background-color: rgba(10, 242, 117, 0.12);
 }
-.hder2{
-    width: 100%;
+.navbar-toggler{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    flex-direction: column;
+    justify-content: center;
+    background: transparent;
+    border: 0.4px solid #614545;
+    padding-left: 10px;
+    padding-right: 10px;
 }
-.logo{
-    height: 75px;
-    font-weight: bolder;
-    font-size: 1.5em;
+.navbar-toggler-icon{
+    background: transparent;
+    border: 1px solid black;
+    height: 1px;
+    margin-top: 5px;
+    width: 18px;
+}
+.icon_{
+    margin-bottom: 5px;
+}
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 0;
+}
+.container-fluid{
+    padding: 0px;
+}
+nav{
+    display: flex;
     text-align: center;
-    letter-spacing: 0.075em;
-    color: #000000;
+    flex-wrap: wrap;
+    background-color: #E2FDF0;
+    padding: 0% 5% 0% 5%;
 }
-input{
-    border-radius: 6px;
+.navbar-brand{
+    font-size: 1.29em;
+    font-weight: bold;
 }
-.search{
-    height: 42px;
-    width: 60%;
+.navbar-brand:hover{
+    color: red;
+}
+.navbar-nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    color: black;
+    font-size: 0.8em;
+}
+.nav-link{
     margin-right: 10px;
+    font-weight: bold;
+    color: black;
+}
+.d-flex{
+    width: 200px;
+    display: flex;
+}
+.form-control {
+    width: 120px;
+    height: 40px;
     font-size: 1em;
     padding: 10px;
     background-color: transparent;
     border: 1px solid #000000;
 }
-.submit{
-    height: 42px;
-    width: 30%;
+  .btn-outline-success {
     color: black;
     background-color: #FED23D;
     align-items: center;
     border: none;
-}
-.nav, .menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav_list{
-    list-style: none;
-    padding-right: 30px;
-}
-.nav_list a{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
-    color: #000000;
-    font-style: normal;
+    padding: 5px;
 }
 /* fin header debut du corps de la page */
 /* premiere section */
@@ -125,27 +140,33 @@ input{
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    height: 800px;
+    height: 700px;
     background-image: url(../IMG/tomatoes-1561565_1920.jpg);
     background-size: cover;
-    background-position: right;
+    background-position: center;
     color: white;
     padding-right: 155px;
     text-align: center;
 }
+.fraisG button{
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
 .frais{
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.5em;
     line-height: 30px;
-    margin-bottom: 10px;
 }
 .gout{
     font-size: 2.7em;
     margin-bottom: 14px;
 }
 .terroir{
-    letter-spacing: 0.16em;
+    letter-spacing: 0.1em;
 }
 /* deuxiemme section */
 .boite2{
@@ -158,10 +179,22 @@ input{
 .abouts, .info{
     display: flex;
     flex-direction: column;
-    align-items: left;
+    flex-wrap: wrap;
 }
 .abouts{
     width: 40%;
+}
+.abouts button{
+    width: 200px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgb(12, 109, 77);
+    color: white;
+}
+.abouts button:hover{
+    background: rgb(221, 44, 44);
 }
 h3{
     font-size: 1.3em;
@@ -170,74 +203,69 @@ h3{
 }
 h2{
     font-weight: bold;
-    font-size: 2.38em;
-}
-.btn{
-    width: 330px;
-    height: 70px;
-    border: 2px solid #8A955C;
-    color: #000000;
-    font-size: 24px;
-    margin-top: 30px;
+    font-size: 1.89em;
 }
 .info{
     width: 52%;
 }
 p{
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1em;
     line-height: 168%;
     align-items: center;
     text-align: justify;
     margin-bottom: 20px;
 }
 .kouak{
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #000000;
     font-weight: bold;
 }
 .pdg{
     color: #8A955C;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 /* troisieme section */
 .boite3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 50px;
     margin-bottom: 100px;
 }
 .categorie{
     display: flex;
     align-items: end;
     width: 32%;
-    height:500px;
+    height:300px;
     border-radius: 17px;
-    padding: 0px 30px 50px 30px;
+    padding: 0px 30px 30px 30px;
+}
+.categorie:hover{
+    border: 2px solid aqua;
+}
+.categorie b{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    box-shadow: 5px 10px 10px 5px;
+    border-radius: 0px 10px 10px 0px;
 }
 .cerise{
     background-image: url('../IMG/pexels-laura-habegger-11247569.jpg');
     background-size: cover;
+    background-position: center;
 }
 .cobra{
     background-image: url('../IMG/pexels-julia-1327838.jpg');
     background-size: cover;
+    background-position: center;
 }
 .marmande{
     background-image: url('../IMG/Mar-0209.jpg');
     background-size: cover;
     background-position: center;
-}
-.name_categ{
-    background-color: white;
-    width: 100%;
-    height: 66px;
-    border-radius: 7px;
-    padding: 15px 0px 15px 30px;
-    font-size: 1.4em;
-    line-height: 36px;
-    font-weight: 600;
 }
 /* quatriemme section */
 .boite4{
@@ -483,11 +511,10 @@ p{
 .boite_logo{
     display: flex;
     width: 18%;
-    height: 150px;
+    height: auto;
     background-color: #D9D9D9;
     text-align: center;
     justify-content: center;
-    padding: 30px;
 }
 /* pied de page */
 footer{
@@ -534,27 +561,26 @@ footer{
 }
 /* media query pour les petit ecran */
 @media screen and (max-width: 600px){
-    .hder2, .footer{
+    .footer{
         display: block;
         flex-direction: column;
         width: 100%;
     }
+    .fraisG{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 0.5em;
+    }
     .boite1{
-        padding-right: 10px;
+        padding-right: 20px;
+        height: 300px;
     }
     .header1{
-        font-size: 0.4em;
-    }
-    .menu{
-        display: block;
-    }
-    nav ul{
-        display: block;
-        flex-direction: column;
-        text-align: center;
+        font-size: 0.3em;
     }
     h2{
-        font-size: 1.3em;
+        font-size: 1.17em;
     }
     p{
         font-size: 0.8em;
@@ -566,40 +592,72 @@ footer{
     .abouts{
         width: 100%;
     }
+    .abouts button{
+        width: 150px;
+        font-size: 0.68em;
+        border-radius: 10px;
+    }
     .info{
         width: 100%;
     }
     .pdg{
-        font-size: 1em;
+        font-size: 0.69em;
     }
-    .btn{
-        width: 150px;
-        font-size: 0.6em;
-        height: 30px;
-        border-radius: 5px;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-    .boite3{
-        display: block;
-        margin-top: 20px;
+    .boite3, .blogs{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .categorie{
-        width: 100%;
+        width: 80%;
+        height: 200px;
         margin-bottom: 20px;
     }
         /* boite5 */
-    .blogs{
-        display: block;
-        width: 100%;
+    
+    .produits{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin-bottom: 10px;
     }
+    .icon_services{
+        width: 55px;
+        height: 55px;
+        margin-bottom: 7px;
+    }
+    .produits b {
+        margin-bottom: 7px;
+        font-size: 1.2em;
+    }
+    .next{
+        width: 25px;
+        height: 25px;
+        margin-bottom: 7px;
+    }
+    .produits p{
+        margin-bottom: 7px;
+    }
+    .img_produits{
+        width: 135px;
+        height: 135px;
+    }
+
     .blogs h3{
         margin-top: 10px;
-        font-size: 1.5em;
+        font-size: 0.8em;
     }
-    .produits{
-        width: 100%;
-        margin-bottom: 20px;
+    .ul_list span{
+        font-size: 0.77em;
+    }
+    .boit{
+        height: auto;
+    }
+    iframe{
+        height: 200px;
     }
     /* footer */
     .section_footer{
@@ -611,7 +669,7 @@ footer{
     /* blogs */
     .blog{
         display: block;
-        width: 100%;
+        width: 80%;
         margin-top: 10px;
     }
     .contass{
